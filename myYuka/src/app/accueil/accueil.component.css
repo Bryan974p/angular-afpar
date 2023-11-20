@@ -1,6 +1,7 @@
 
 .bordered {
     border: 1px solid #dee2e6; /* Couleur de la bordure par défaut de Bootstrap */
+    border-radius: 15px;
     margin-bottom: 15px; /* Espace entre les blocs */
     padding: 15px; /* Espace à l'intérieur du bloc */
     box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
@@ -27,4 +28,7 @@
   .btn {
     background-color: #BB37DE;
     color: white;
+    box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
   }
