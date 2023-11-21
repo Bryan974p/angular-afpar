@@ -11,18 +11,47 @@
 
 /*HEADER*/
 .jumbotron .container{
-    background-color: #BB37DE;
+  background: #bb37de;
+  color: whitesmoke;
 }
 
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-shadow: 5px 1px 50px #87bb34;
+}
   .container {
     background-color: #87bb34;
   }
+
+  .card-body {
+    display: flex;
+    margin-left: 6rem;
+    gap: 4;
+  }
+
+  img {
+    width: auto;
+    height: 10rem;
+  }
+
+.card-text {
+  padding: 2rem;
+}
+
+
 
   /*SCANNER*/
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .form-control {
+    box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
   }
 
   .btn {

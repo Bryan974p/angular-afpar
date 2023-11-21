@@ -12,10 +12,12 @@
       <div class="col-12">
         <form>
           <div class="form-group col-6">
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Entrer le code barre">
+            <input type="text" class="form-control" [formControl]="champSaisi" placeholder="Entrer le code barre">
           </div>
           <div class="text-center pt-3">
-            <button class="btn btn-success" type="submit">Scanner</button>
+
+            <p> <a (click)="chercherChampSaisi()" class="btn btn-success" >Scanner </a></p>
+
           </div>
         </form>
       </div>
@@ -23,31 +25,45 @@
   </div>
 
   <!--Information Card-->
-  <div class="container bordered py-5">
+  
+  <div class="container bordered py-4">
     <div class="row">
+      <div class="productTitle">
+        <h2>{{nomProduit}}</h2>
+      </div> 
       <div class="col-md-6">
+        
         <div class="card">
-          <img src="path-to-your-image.jpg" class="card-img-top" alt="Photo">
+      
           <div class="card-body">
-            <p class="card-text">Information sur la photo.</p>
+
+            <img src={{imageProduit}} class="card-img-top" alt="Photo">
+            <p class="card-text">{{informations}}</p>
+
           </div>
+
         </div>
       </div>
       <div class="col-md-6">
         <div class="card">
           <div class="card-body">
-            <p class="card-text">Liste des ingrédients.</p>
+            <div>
+           <img src={{imageIngredient}} class="card-img-top" alt="Photo"> 
+            </div>
+            <p class="card-text">{{ingredients}}</p>
+
           </div>
         </div>
       </div>
     </div>
+  
   </div>
   
   <!--Alergènes-->
   <div class="container bordered text-center">
     <div class="row">
       <div class="col-12">
-        Alergène
+       <p>{{alergenes}}</p>
       </div>
     </div>
   </div>
@@ -56,13 +72,14 @@
   <div class="container bordered ">
     <div class="row col-12 text-center">
       <div class="col-3 bordered mx-auto my-2">
-        NOVA
+        <p>{{nova}}</p>
       </div>
       <div class="col-3 bordered mx-auto my-2">
-        NUTRISCORE
+       <p>{{nutriscore}}</p>
+
       </div>
       <div class="col-3 bordered mx-auto my-2">
-        Huile de Palme
+        <p>{{huileDePalm}}</p>
       </div>
     </div>
   </div>
@@ -71,7 +88,7 @@
   <div class="container bordered text-center">
     <div class="row">
       <div class="col-12">
-        DISTRIBUTEUR
+       <p>{{distributeur}}</p>
       </div>
     </div>
   </div>
