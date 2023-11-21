@@ -1,63 +1,54 @@
-
+/* Styles pour les éléments bordurés */
 .bordered {
-    border: 1px solid #dee2e6; /* Couleur de la bordure par défaut de Bootstrap */
-    border-radius: 15px;
-    margin-bottom: 15px; /* Espace entre les blocs */
-    padding: 15px; /* Espace à l'intérieur du bloc */
-    box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
-  }
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
+}
 
-/*HEADER*/
-.jumbotron .container{
-  background: #bb37de;
+/* Styles pour la section jumbotron */
+.jumbotron .container {
+  background: #87bb34;
   color: whitesmoke;
 }
 
+/* Style pour le titre principal */
 h1 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
   font-weight: bold;
   text-shadow: 5px 1px 50px #87bb34;
 }
-  .container {
-    background-color: #87bb34;
-  }
 
-  .card-body {
-    display: flex;
-    margin-left: 6rem;
-    gap: 4;
-  }
+/* Styles pour le formulaire (section scanner) */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  img {
-    width: auto;
-    height: 10rem;
-  }
+.form-control, .btn {
+  box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
+}
 
+/* Style personnalisé pour les boutons */
+.btn {
+  background-color: #BB37DE;
+  color: white;
+}
+
+/* Style pour les conteneurs */
+.container {
+  background-color: #87bb34;
+}
+
+/* Conteneur d'image */
+.image-container img {
+  max-height: 90%;
+  width: auto;
+}
+
+/* Style du texte dans les cartes */
 .card-text {
   padding: 2rem;
 }
-
-
-
-  /*SCANNER*/
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .form-control {
-    box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
-  }
-
-  .btn {
-    background-color: #BB37DE;
-    color: white;
-    box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 4px 10px 0px rgba(0,0,0,0.75);
-  }

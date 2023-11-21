@@ -1,105 +1,103 @@
-<!--Header-->
-<div class="jumbotron text-center  text-black">
-    <div class="container bordered">
+<!-- En-tête -->
+<div class="jumbotron text-center text-black">
+  <div class="container bordered">
       <h1 class="display-4">MY YUKA</h1>
       <p class="lead">Obtenez les informations sur les produits alimentaires</p>
-    </div>
   </div>
-  
-  <!--Scanner Section-->
-  <div class="container bordered">
-    <div class="row">
+</div>
+
+<!-- Section Scanner -->
+<div class="container bordered">
+  <div class="row">
       <div class="col-12">
-        <form>
-          <div class="form-group col-6">
-            <input type="text" class="form-control" [formControl]="champSaisi" placeholder="Entrer le code barre">
-          </div>
-          <div class="text-center pt-3">
-
-            <p> <a (click)="chercherChampSaisi()" class="btn btn-success" >Scanner </a></p>
-
-          </div>
-        </form>
+          <form>
+              <div class="form-group col-6">
+                  <!-- Champ de saisie pour le code-barres -->
+                  <input type="text" class="form-control" [formControl]="champSaisi" placeholder="Entrer le code barre">
+              </div>
+              <div class="text-center pt-3">
+                  <!-- Bouton pour le scanner -->
+                  <p><a (click)="chercherChampSaisi()" class="btn btn-success">Scanner</a></p>
+              </div>
+          </form>
       </div>
-    </div>
   </div>
+</div>
 
-  <!--Information Card-->
-  
-  <div class="container bordered py-4">
-    <div class="row">
-      <div class="productTitle">
-        <h2>{{nomProduit}}</h2>
-      </div> 
+<!-- Carte d'Information -->
+<div class="container bordered py-4">
+  <div class="row d-flex align-items-stretch">
+      <!-- Image et informations du produit -->
       <div class="col-md-6">
-        
-        <div class="card">
-      
-          <div class="card-body">
-
-            <img src={{imageProduit}} class="card-img-top" alt="Photo">
-            <p class="card-text">{{informations}}</p>
-
+          <div class="productTitle">
+              <h2>{{nomProduit}}</h2>
           </div>
-
-        </div>
+          <div class="card">
+              <div class="card-body">
+                  <div class="image-container">
+                      <img src={{imageProduit}} class="card-img-top" alt="Photo">
+                  </div>
+                  <p class="card-text">{{informations}}</p>
+              </div>
+          </div>
       </div>
+      <!-- Liste des ingrédients -->
       <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <div>
-           <img src={{imageIngredient}} class="card-img-top" alt="Photo"> 
-            </div>
-            <p class="card-text">{{ingredients}}</p>
-
+          <h3 class="ingredient">Ingredients :</h3>
+          <div class="card">
+              <div class="card-body">
+                  <p class="card-text">{{ingredients}}</p>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-  
   </div>
-  
-  <!--Alergènes-->
-  <div class="container bordered text-center">
-    <div class="row">
+</div>
+
+<!-- Allergènes -->
+<div class="container bordered text-center">
+  <div class="row">
       <div class="col-12">
-       <p>{{alergenes}}</p>
+          <h3>Allergènes</h3>
+          <p>{{alergenes}}</p>
       </div>
-    </div>
   </div>
-  
-  <!--Nutriscore-->
-  <div class="container bordered ">
-    <div class="row col-12 text-center">
-      <div class="col-3 bordered mx-auto my-2">
-        <p>{{nova}}</p>
-      </div>
-      <div class="col-3 bordered mx-auto my-2">
-       <p>{{nutriscore}}</p>
+</div>
 
+<!-- Nutriscore -->
+<div class="container bordered">
+  <div class="row col-12 text-center">
+      <!-- Scores nutritionnels -->
+      <div class="col-3 bordered mx-auto my-2">
+          <h4>Nova</h4>
+          <p>{{nova}}</p>
       </div>
       <div class="col-3 bordered mx-auto my-2">
-        <p>{{huileDePalm}}</p>
+          <h4>Nutriscore</h4>
+          <p>{{nutriscore}}</p>
       </div>
-    </div>
+      <div class="col-3 bordered mx-auto my-2">
+          <h4>Huile de Palme</h4>
+          <p>{{huileDePalm}}</p>
+      </div>
   </div>
+</div>
 
-  <!--Info Distributeur-->
-  <div class="container bordered text-center">
-    <div class="row">
+<!-- Informations sur le distributeur -->
+<div class="container bordered text-center">
+  <div class="row">
       <div class="col-12">
-       <p>{{distributeur}}</p>
+          <h4>Distributeur</h4>
+          <p>{{distributeur}}</p>
       </div>
-    </div>
   </div>
+</div>
 
-  <!--Footer-->
-  <footer class="text-muted">
-    <div class="container bordered text-center">
+<!-- Pied de page -->
+<footer class="text-muted">
+  <div class="container bordered text-center">
       <p class="float-right">
-        <a href="#">Retour en haut</a>
+          <a href="#">Retour en haut</a>
       </p>
       <p>myYuka &copy; Bryan FRANCOMME</p>
-    </div>
-  </footer>
-  
+  </div>
+</footer>

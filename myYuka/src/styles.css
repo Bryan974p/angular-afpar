@@ -1,2 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    background-image: url('./assets/img/background.png');
+    background-size: cover; /* Couvre tout l'arrière-plan */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image lors du défilement */
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
